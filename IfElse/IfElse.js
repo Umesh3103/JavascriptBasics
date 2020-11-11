@@ -39,7 +39,7 @@ if(max<digit5){
 console.log("Minimum value is: "+ min+", Maximum value is: "+max);
 
 //UC2
-let day = process.argv[2];
+/*let day = process.argv[2];
 let month = process.argv[3];
 
 if(month >=3 && month<=6 && day>0 && day<32){
@@ -65,4 +65,29 @@ if(month >=3 && month<=6 && day>0 && day<32){
 }
 else{
     console.log("False");
+}*/
+
+//UC3
+let year = process.argv[2];
+
+if(year >999 && year < 10000){
+    if(year%4 == 0){
+        if(year%100 == 0){
+            if(year%400==0){
+                console.log("Year "+year+" is a leap year");
+            }
+            else{
+                console.log("Year "+year+" is not a leap year");
+            }
+        }
+        else{
+            console.log("Year "+year+" is a leap year");
+        }
+    }
+    else{
+        console.log("Year "+year+" is not a leap year");
+    }
+}
+else{
+    console.log("Enter a valid year");
 }
