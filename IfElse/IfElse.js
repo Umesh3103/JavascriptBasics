@@ -39,7 +39,7 @@ if(max<digit5){
 console.log("Minimum value is: "+ min+", Maximum value is: "+max);
 
 //UC2
-/*let day = process.argv[2];
+let day = process.argv[2];
 let month = process.argv[3];
 
 if(month >=3 && month<=6 && day>0 && day<32){
@@ -65,7 +65,7 @@ if(month >=3 && month<=6 && day>0 && day<32){
 }
 else{
     console.log("False");
-}*/
+}
 
 //UC3
 let year = process.argv[2];
@@ -90,4 +90,15 @@ if(year >999 && year < 10000){
 }
 else{
     console.log("Enter a valid year");
+}
+
+//UC4
+let coin = Math.floor(Math.random()*10)%2;
+let Head = 0;
+let Tail = 1;
+if(coin==Head){
+    console.log("It's Heads");
+} 
+else{
+    console.log("It's Tails");
 }
