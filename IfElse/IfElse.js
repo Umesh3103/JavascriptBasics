@@ -37,3 +37,32 @@ if(max<digit5){
     max=digit5;
 }
 console.log("Minimum value is: "+ min+", Maximum value is: "+max);
+
+//UC2
+let day = process.argv[2];
+let month = process.argv[3];
+
+if(month >=3 && month<=6 && day>0 && day<32){
+    if(month==3){
+        if(day>20){
+            console.log("True");
+        }
+        else{
+            console.log("False");
+        }
+    }
+    if(month == 6){
+        if(day<20){
+            console.log("True");
+        }
+        else{
+            console.log("False");
+        }
+    }
+    else if (month!=3 && month != 6){
+        console.log("True");
+    }
+}
+else{
+    console.log("False");
+}
