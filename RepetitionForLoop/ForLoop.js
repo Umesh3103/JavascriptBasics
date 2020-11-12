@@ -27,3 +27,11 @@ for(let i = Number(n1)+1; i< Number(n2);i++){
     if(flag==0)
         console.log(i);  
 }
+
+// UC5
+let factorial = process.argv[6];
+let sum=1;
+for(let i = factorial;i>0;i--){
+    sum = sum*i;
+}
+console.log(sum);
