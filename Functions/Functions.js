@@ -32,7 +32,7 @@ if(answer!=0){
 
 // UC2
 let number = process.argv[4];
-function checkPalindrome(n){
+function getPalindrome(n){
     let copy = 0;
     let digit=0;
     while(n>0){
@@ -43,11 +43,35 @@ function checkPalindrome(n){
     return copy;
 }
 
-let ans = checkPalindrome(number);
+let ans = getPalindrome(number);
 if(ans==number){
     console.log(number+" is a palindrome number");
 }
 else
     console.log(number+" is not a palindrome number");
+
+//UC3
+  let m = process.argv[5];
+  function checkPrime(n){
+      for(let i = 2; i<Math.sqrt(n);i++){
+          if(n%i==0){
+              return false;
+          }
+      }
+      return true;
+  }  
+
+let sol = checkPrime(m);
+if(sol == true){
+    let pal= getPalindrome(m);
+    let c = checkPrime(pal);
+    if(c == true){
+        console.log("A prime number's palindrome is also a prime number");
+
+    }
+}  
+else{
+    console.log("Given number is not prime");
+}
 
 
