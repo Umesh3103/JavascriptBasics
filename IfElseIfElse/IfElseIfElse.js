@@ -38,3 +38,30 @@ else if(digit1==6)
 else if(digit1==7)
     console.log("Saturday");
 
+//UC3
+let number = process.argv[2];
+let count=0;
+if(number<10){
+    console.log("Unit");
+    return;
+}
+while(number>=10){
+    count++;
+    number=number/10;
+}
+if(count==1)
+    console.log("Ten");
+else if(count==2)
+    console.log("Hundred");
+else if(count==3)
+    console.log("Thousand");
+else if(count==4)
+    console.log("Ten Thousand");
+else if(count==5)
+    console.log("Lakhs");
+else if(count==6)
+    console.log("Ten Lakhs");
+else if(count==7)
+    console.log("Crore");
+
+
