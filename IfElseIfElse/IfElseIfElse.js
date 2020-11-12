@@ -65,3 +65,43 @@ else if(count==7)
     console.log("Crore");
 
 
+//UC4
+let a = process.argv[3];
+let b = process.argv[4];
+let c = process.argv[5];
+console.log(a);
+console.log(b);
+console.log(c);
+let operation1 = Number(a)+b*c;
+let operation2 = (a%b)+Number(c);
+let operation3 = Number(c)+(a/b);
+let operation4 = (a*b)+Number(c);
+console.log(operation1);
+console.log(operation2);
+console.log(operation3);
+console.log(operation4);
+
+let max=Number.MIN_VALUE;
+let min=Number.MAX_VALUE;
+
+if(operation1>max)
+    max=operation1;
+if(operation2>max)
+    max=operation2;
+if(operation3>max)
+    max=operation3;
+if(operation4>max)
+    max=operation4;
+
+if(operation1<min)
+    min=operation1;
+if(operation2<min)
+    min=operation2;
+if(operation3<min)
+    min=operation3;
+if(operation4<min)
+    min=operation4; 
+console.log("Minimum value is: "+min);
+console.log("Maximum value is: "+max);      
+
+
