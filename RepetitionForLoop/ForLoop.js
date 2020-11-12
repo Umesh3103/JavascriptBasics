@@ -13,12 +13,17 @@ for(let i=2;i<=digit;i++){
 }
 console.log(harmonicNumber);
 
-// UC3 
-let p = process.argv[4];
-for(let i = 2; i<= Math.sqrt(p);i++){
-    if(p%i==0){
-        console.log(p+" is not a prime number");
-        return;
-    }    
+// UC3,UC4 
+let n1 = process.argv[4];
+let n2 = process.argv[5];
+for(let i = Number(n1)+1; i< Number(n2);i++){
+    let flag=0;
+    for(let j=2;j<=Math.sqrt(i);j++){
+        if(i%j==0){
+            flag = 1;
+            break;
+        }
+    }
+    if(flag==0)
+        console.log(i);  
 }
-console.log(p+" is a prime number");
