@@ -30,4 +30,24 @@ if(answer!=0){
     console.log(answer);
 }
 
+// UC2
+let number = process.argv[4];
+function checkPalindrome(n){
+    let copy = 0;
+    let digit=0;
+    while(n>0){
+        digit= n%10;
+        copy = copy *10 +digit;
+        n = Number.parseInt(n/10);
+    }
+    return copy;
+}
+
+let ans = checkPalindrome(number);
+if(ans==number){
+    console.log(number+" is a palindrome number");
+}
+else
+    console.log(number+" is not a palindrome number");
+
 
