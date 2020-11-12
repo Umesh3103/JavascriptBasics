@@ -13,7 +13,7 @@ for(let i=2;i<=digit;i++){
 }
 console.log(harmonicNumber);
 
-// UC3,UC4 
+// UC3,UC4,UC6
 let n1 = process.argv[4];
 let n2 = process.argv[5];
 for(let i = Number(n1)+1; i< Number(n2);i++){
