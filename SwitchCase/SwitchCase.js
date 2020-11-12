@@ -94,3 +94,19 @@ switch(count){
         console.log("Crore");
         break;
 }        
+
+//UC4
+let unit = process.argv[3];
+//feet to inch
+let number1 = unit*12;
+//inch to feet
+let number2= unit/12;
+//feet to meter
+let number3 = unit*0.3048;
+// meter to feet
+let number4 = unit*3.28084;
+console.log(unit+" feet to inch is: "+number1);
+console.log(unit+" inch to feet is: "+number2);
+console.log(unit+" feet to meter is: "+number3);
+console.log(unit+" meter to feet is: "+number4);
+
